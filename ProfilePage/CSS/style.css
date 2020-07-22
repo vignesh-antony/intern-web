@@ -183,7 +183,7 @@ body::-webkit-scrollbar-thumb{
     align-items: center;
     margin-bottom: 0.25em;
 }
-.add-icon{
+.add-button{
     margin-left: auto;
     margin-right: 0.5em;
     font-size: 1.5em;
@@ -396,6 +396,10 @@ body::-webkit-scrollbar-thumb{
 @media only screen and (max-width:500px){
     .main{
         font-size: 0.95em;
+    }
+    .connections-section,
+    .post-section{
+        margin-bottom: 2em;
     }
 }
 @media only screen and (max-width:340px){

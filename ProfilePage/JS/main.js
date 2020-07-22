@@ -47,13 +47,13 @@ for(elem of tabs){
 
 var blurBackground = function () {
     document.querySelector(".sidebar").style.boxShadow = '0px 0px 20px 5000px #00000094';
-    document.querySelector(".container").style.pointerEvents = 'none';
+    // document.querySelector(".container").style.pointerEvents = 'none';
     document.querySelector(".mobile-header").style.pointerEvents = 'none';
     document.querySelector(".mobile-nav-bar").style.pointerEvents = 'none';
 }
 var removeBlurBackground = function () {
     document.querySelector(".sidebar").style.boxShadow = 'none';
-    document.querySelector(".container").style.pointerEvents = 'auto';
+    // document.querySelector(".container").style.pointerEvents = 'auto';
     document.querySelector(".mobile-header").style.pointerEvents = 'auto';
     document.querySelector(".mobile-nav-bar").style.pointerEvents = 'auto';
 }
@@ -70,7 +70,7 @@ document.querySelector(".mobile-header .me-icon").addEventListener("click", func
 })
 
 // sidebar close
-document.querySelector(".container-wrap").addEventListener("click", function () {
+document.querySelector(".container").addEventListener("click", function () {
     var sidebar = document.querySelector(".sidebar")
     sidebar.style.left = "";
     sidebar.style.top = "";
@@ -217,7 +217,7 @@ function moveTouch2(e) {
 var scroll = 1;
 var scrolldown = 1;
 window.onscroll = function (e) {
-      console.log(scroll+'and'+window.pageYOffset +'or'+scrolldown);
+    //   console.log(scroll+'and'+window.pageYOffset +'or'+scrolldown);
     if (this.oldScroll > this.scrollY) {
         scroll++;
         scrolldown = 1;
