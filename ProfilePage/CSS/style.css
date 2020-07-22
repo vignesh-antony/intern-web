@@ -135,6 +135,9 @@
     border-top: 2px solid #196fb6;
     font-weight: 500;
 }
+.hide{
+    display: none;
+}
 .about-section{
     width: 100%;
     background-color: white;
@@ -256,4 +259,61 @@
     padding: 0.5em;
     display: inline-block;
     cursor: pointer;
+}
+.connections-section{
+    background-color: white;
+    padding: 0.5em;
+}
+.total-conn{
+    padding: 1em;
+}
+.contacts{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em;
+    margin: 0.75em 0;
+    border-bottom: 1px solid gainsboro;
+}
+.contacts:last-of-type{
+    border-bottom: unset;
+}
+.cont-img{
+    width: 2.5em;
+    height: 2.5em;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.cont-details{
+    margin-left: 1em;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+.conn-name{
+    font-weight: 500;
+    color: #196fb6;
+}
+.conn-work{
+    margin-top: 0.15em;
+    font-size: 0.9em;
+}
+.conn-locate{
+    font-size: 0.8em;
+    color: gray;
+}
+.message{
+    align-self: center;
+    border: none;
+    background-color: transparent;
+    border: 2px solid #196fb6;
+    font-weight: 500;
+    width: max-content;
+    cursor: pointer;
+    padding: 0.3em 0.85em;
+    font-size: 0.95em;
+    color: #196fb6;
+    border-radius: 1px;
+}
+.message:hover{
+    background-color: #ebf6ff;
 }

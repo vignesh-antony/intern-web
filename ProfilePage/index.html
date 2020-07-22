@@ -29,11 +29,11 @@
                 </div>
             </div>
             <div class="pers-nav-bar">
-                <button class="nav-button active-tab">About</button>
-                <button class="nav-button">Connections</button>
-                <button class="nav-button">Posts</button>
+                <button class="nav-button active-tab" t-id="about">About</button>
+                <button class="nav-button" t-id="connect">Connections</button>
+                <button class="nav-button" t-id="posts">Posts</button>
             </div>
-            <div class="about-section">
+            <div class=" section about-section" id="about">
                 <div class="info-box">
                     <span class="heading">
                         <span>Summary</span>
@@ -79,7 +79,7 @@
                         <span class="clg-details">
                             <span class="clg-name">Software Engineer</span>
                             <span class="clg-degr">Google LLC</span>
-                            <span class="clg-time">2017 - Present &bull; 3 yrs 4 mos</span>
+                            <span class="clg-time">2017 - Present &nbsp;&bull;&nbsp; 3 yrs 4 mos</span>
                             <span class="clg-time">Mountain View, California, United States</span><br>
                             <ul class="work-details">
                                 <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, laborum.</li>
@@ -121,7 +121,7 @@
                     <span class="heading">
                         <span>Interests</span>
                         <span class="add-icon" title="Add Interests">+</span>
-                        <span class="svg-icon edit-content"></span>
+                        <span class="svg-icon edit-content" title="Edit"></span>
                     </span>
                     <div class="info-content">
                         <ul class="interest">
@@ -131,10 +131,50 @@
                     </div>
                 </div>
             </div>
-            <div class="connections-section">
-
+            <div class="section connections-section" id="connect">
+                <div class="total-conn">&bull;&nbsp; 41 Connections</div>
+                <div class="contacts">
+                    <img src="CSS/Images/sample5.jpg" class="cont-img">
+                    <div class="cont-details">
+                        <a href="" class="conn-name">Surya A</a>
+                        <span class="conn-work">Managing Director in ITC</span>
+                        <span class="conn-locate">Chennai, TamilNadu</span>
+                    </div>
+                    <button class="message">Message</button>
+                </div>
+                <div class="contacts">
+                    <img src="CSS/Images/sample1.jpg" class="cont-img">
+                    <div class="cont-details">
+                        <a href="" class="conn-name">Manikandan S</a>
+                        <span class="conn-work">Software Analyst in HCL</span>
+                        <span class="conn-locate">Bangalore, Karnataka</span>
+                    </div>
+                    <button class="message">Message</button>
+                </div>
+                <div class="contacts">
+                    <img src="CSS/Images/sample2.jpg" class="cont-img">
+                    <div class="cont-details">
+                        <a href="" class="conn-name">Prabhakar R</a>
+                        <span class="conn-work">Software Engineer at VTV Chennai</span>
+                        <span class="conn-locate">Chennai, TamilNadu</span>
+                    </div>
+                    <button class="message">Message</button>
+                </div>
+                <div class="contacts">
+                    <img src="CSS/Images/sample4.jpg" class="cont-img">
+                    <div class="cont-details">
+                        <a href="" class="conn-name">Sai Prakash</a>
+                        <span class="conn-work">Mechanical Engineer in DeShaw</span>
+                        <span class="conn-locate">Mumbai, Maharastra</span>
+                    </div>
+                    <button class="message">Message</button>
+                </div>
+            </div>
+            <div class="section post-section" id="posts">
+                
             </div>
         </div>
     </div>
+    <script src="JS/main.js"></script>
 </body>
 </html>
