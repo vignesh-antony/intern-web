@@ -401,6 +401,11 @@ body::-webkit-scrollbar-thumb{
     .post-section{
         margin-bottom: 2em;
     }
+    .link::before,
+    .mail::before,
+    .contact::before{
+        background-size: 0.9em;
+    }
 }
 @media only screen and (max-width:340px){
     .main{
