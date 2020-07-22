@@ -1,0 +1,115 @@
+@font-face{
+    src: url("../Fonts/SourceSansPro-Regular.ttf");
+    font-family: myFont;
+}
+@font-face{
+    src: url("../Fonts/SourceSansPro-Bold.ttf");
+    font-family: myFont;
+    font-weight: bold;
+}
+@font-face{
+    src: url("../Fonts/SourceSansPro-SemiBold.ttf");
+    font-family: myFont;
+    font-weight: 500;
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: myFont,'Segoe UI';
+}
+.container{
+    background-color: whitesmoke;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.main{
+    width: 50%;
+    padding: 1em;
+}
+.profile-section{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px gainsboro;
+}
+.profile-photo{
+    position: relative;
+}
+.back-photo{
+    width: 100%;
+    height: 12em;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+.svg-icon{
+    width: 1.75em;
+    height: 1.75em;
+    background-size: 1em;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    cursor: pointer;
+}
+.camera{
+    background-color: white;
+    background-image: url("Images/photo.svg");
+    position: absolute;
+    top: 0.75em;
+    right: 0.75em;
+    border-radius: 50%;
+}
+.user-photo{
+    width: 8em;
+    height: 8em;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -3em;
+    left: 1.5em;
+    border: 2px solid whitesmoke;
+}
+.personal-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3.75em;
+    padding: 0 1em 1em 1em;
+}
+.user-name{
+    display: block;
+    font-size: 1.25em;
+    font-weight: 500;
+}
+.location{
+    font-size: 0.95em;
+    color: gray;
+}
+.edit-profile{
+    background-color: transparent;
+    border: none;
+    font-size: 1em;
+    font-weight: 500;
+    color: #196fb6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 0.25em 0.75em;
+}
+.edit-profile:hover{
+    background-color: #ebf6ff;
+}
+.edit-profile::before{
+    content: '';
+    width: 1em;
+    height: 1em;
+    background-size: 1em;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    margin-right: 0.5em;
+    background-image: url("Images/edit.svg");
+}
