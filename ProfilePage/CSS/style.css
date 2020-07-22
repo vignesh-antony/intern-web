@@ -102,6 +102,13 @@ body::-webkit-scrollbar-thumb{
     font-size: 0.9em;
     color: gray;
 }
+.num{
+    margin: 0.5em 0;
+    font-size: 0.85em;
+    color: #196fb6;
+    font-weight: 500;
+    cursor: pointer;
+}
 .edit-profile{
     background-color: transparent;
     border: none;
@@ -139,6 +146,8 @@ body::-webkit-scrollbar-thumb{
     background-color: transparent;
     border-top: 2px solid transparent;
     cursor: pointer;
+    display: inline-flex;
+    align-items: center;
 }
 .active-tab{
     background-color: white;
@@ -195,7 +204,7 @@ body::-webkit-scrollbar-thumb{
 }
 .anchor{
     color: black;
-    padding-bottom: 0.5em;
+    padding-bottom: 0.75em;
     width: max-content;
 }
 .link,
@@ -215,7 +224,7 @@ body::-webkit-scrollbar-thumb{
     background-repeat: no-repeat;
     background-image: url("Images/phone.svg");
     display: block;
-    margin-right: 0.5em;
+    margin-right: 0.75em;
 }
 .link::before{
     background-image: url("Images/url.svg");
