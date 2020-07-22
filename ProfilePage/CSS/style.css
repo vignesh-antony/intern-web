@@ -89,13 +89,16 @@ body::-webkit-scrollbar-thumb{
     margin-top: 3.75em;
     padding: 0 1em 1em 1em;
 }
+.personal-details div{
+    width: 60%;
+}
 .user-name{
     display: block;
-    font-size: 1.25em;
+    font-size: 1.3em;
     font-weight: 500;
 }
 .status{
-    margin-top: 0.15em;
+    margin-top: 0.2em;
     font-size: 0.95em;
 }
 .location{
@@ -332,6 +335,7 @@ body::-webkit-scrollbar-thumb{
     font-size: 0.95em;
     color: #196fb6;
     border-radius: 1px;
+    margin-left: 0.5em;
 }
 .message:hover{
     background-color: #ebf6ff;
@@ -435,4 +439,63 @@ body::-webkit-scrollbar-thumb{
 .share-icon{
     background-image: url("Images/share.svg");
     margin-right: 0.25em;
+}
+@media only screen and (max-width:1600px){
+    .main{
+        width: 55%;
+    }
+}
+@media only screen and (max-width:1440px){
+    .main{
+        width: 65%;
+    }
+}
+@media only screen and (max-width:1300px){
+    .main{
+        width: 70%;
+    }
+}
+@media only screen and (max-width:1200px){
+    .main{
+        width: 75%;
+    }
+}
+@media only screen and (max-width:1100px){
+    .main{
+        width: 80%;
+    }
+}
+@media only screen and (max-width:1000px){
+    .main{
+        width: 85%;
+    }
+}
+@media only screen and (max-width:900px){
+    .main{
+        width: 90%;
+    }
+}
+@media only screen and (max-width:850px){
+    .main{
+        width: 95%;
+    }
+}
+@media only screen and (max-width:768px){
+    .main{
+        width: 100%;
+        padding: 1em 0 0 0;
+    }
+    .profile-section, .back-photo{
+        border-radius: unset;
+    }
+}
+@media only screen and (max-width:500px){
+    .main{
+        font-size: 0.95em;
+    }
+}
+@media only screen and (max-width:340px){
+    .main{
+        font-size: 0.9em;
+    }
 }
