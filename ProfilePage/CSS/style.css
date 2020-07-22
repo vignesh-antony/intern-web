@@ -17,12 +17,13 @@
     padding: 0;
     outline: none;
     box-sizing: border-box;
+    text-decoration: none;
     font-family: myFont,'Segoe UI';
 }
 .container{
     background-color: whitesmoke;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
 }
@@ -83,8 +84,12 @@
     font-size: 1.25em;
     font-weight: 500;
 }
-.location{
+.status{
+    margin-top: 0.15em;
     font-size: 0.95em;
+}
+.location{
+    font-size: 0.9em;
     color: gray;
 }
 .edit-profile{
@@ -112,4 +117,143 @@
     display: block;
     margin-right: 0.5em;
     background-image: url("Images/edit.svg");
+}
+.pers-nav-bar{
+    width: 100%;
+    margin-top: 1em;
+}
+.nav-button{
+    padding: 0.6em 1.15em;
+    font-size: 0.95em;
+    border: none;
+    background-color: transparent;
+    border-top: 2px solid transparent;
+    cursor: pointer;
+}
+.active-tab{
+    background-color: white;
+    border-top: 2px solid #196fb6;
+    font-weight: 500;
+}
+.about-section{
+    width: 100%;
+    background-color: white;
+    padding: 1em;
+}
+.info-box{
+    padding: 0.75em 1.15em;
+    border-bottom: 1px solid gainsboro;
+    margin-bottom: 1em;
+}
+.info-box:last-of-type{
+    border-bottom: none;
+}
+.heading{
+    font-weight: bold;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    color: #196fb6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.25em;
+}
+.add-icon{
+    margin-left: auto;
+    margin-right: 0.5em;
+    font-size: 1.5em;
+    color: #196fb6;
+    cursor: pointer;
+}
+.edit-content{
+    background-size: 0.8em;
+    background-image: url("Images/edit-icon.svg");
+    opacity: 0.5;
+    border-radius: 50%;
+}
+.edit-content:hover{
+    opacity: 1;
+    background-color: #ebf6ff;
+}
+.info-content{
+    font-size: 0.95em;
+    padding: 0.75em 0;
+    text-align: justify;
+}
+.anchor{
+    color: black;
+    padding-bottom: 0.5em;
+    width: max-content;
+}
+.link,
+.mail,
+.contact{
+    display: flex;
+    align-items: center;
+}
+.link::before,
+.mail::before,
+.contact::before{
+    content: '';
+    width: 1em;
+    height: 1em;
+    background-size: 0.75em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("Images/phone.svg");
+    display: block;
+    margin-right: 0.5em;
+}
+.link::before{
+    background-image: url("Images/url.svg");
+}
+.mail::before{
+    background-image: url("Images/mail.svg");
+}
+.educate{
+    display: flex;
+}
+.clg-img{
+    width: 2.5em;
+    height: 2.5em;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.clg-details{
+    margin-left: 1em;
+    display: flex;
+    flex-direction: column;
+}
+.clg-name{
+    font-size: 1em;
+    font-weight: 500;
+}
+.clg-degr{
+    font-size: 0.9em;
+    margin-top: 0.15em;
+}
+.clg-time{
+    font-size: 0.8em;
+    color: gray;
+}
+.work-details{
+    padding-left: 1em;
+}
+.skills, .interest{
+    list-style-type: none;
+}
+.skills li{
+    padding: 0.5em 1em;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+.skill-status{
+    color: gray;
+    font-size: 0.8em;
+}
+.interest li{
+    padding: 0.5em;
+    display: inline-block;
+    cursor: pointer;
 }
