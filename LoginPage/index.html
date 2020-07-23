@@ -67,46 +67,26 @@
                 <span class="number">5</span>
             </div>
             <div class="multi-stage">
-                <form action="" class="forms" autocomplete="off" spellcheck="false">
+                <form action="" class="forms slide-left" autocomplete="off" spellcheck="false">
                     <div class="form-heading">
-                        <span class="svg-icon pers"></span>
-                        <span>Personal Details</span>
+                        <span class="svg-icon account"></span>
+                        <span>Account Details</span>
                     </div>
                     <div class="input-wrap">
-                        <input type="text" class="fields" name="first" required>
-                        <span class="label">First Name</span>
+                        <input type="text" class="fields" name="uname" required>
+                        <span class="label">User Name</span>
                     </div>
                     <div class="input-wrap">
-                        <input type="text" class="fields" name="last" required>
-                        <span class="label">Last Name</span>
+                        <input type="password" class="fields password" name="upass" required>
+                        <span class="label">Password</span>
                     </div>
-                    <span class="note">Date of Birth</span>
-                    <div class="date-wrap">
-                        <div class="input-wrap">
-                            <select class="fields" name="" id="date" required>
-                                <option value="" selected disabled></option>
-                                <option value="1">1</option>
-                            </select>
-                            <span class="label select">Date</span>
-                        </div>
-                        <div class="input-wrap month">
-                            <select class="fields" name="" id="month" required>
-                                <option value="" selected disabled></option>
-                                <option value="1">1</option>
-                            </select>
-                            <span class="label select">Month</span>
-                        </div>
-                        <div class="input-wrap">
-                            <select class="fields" name="" id="year" required>
-                                <option value="" selected disabled></option>
-                                <option value="1">1</option>
-                            </select>
-                            <span class="label select">Year</span>
-                        </div>
+                    <div class="input-wrap">
+                        <input type="password" class="fields password" name="repass" required>
+                        <span class="label">Retype Password</span>
                     </div>
                     <button class="continue">Continue</button>
                 </form>
-                <form action="" class="forms hide" autocomplete="off" spellcheck="false">
+                <form action="" class="forms slide-left" autocomplete="off" spellcheck="false">
                     <div class="form-heading">
                         <span class="svg-icon pers"></span>
                         <span>Personal Details</span>
@@ -143,7 +123,104 @@
                             <span class="label select">Year</span>
                         </div>
                     </div>
-                    <button class="continue">Continue</button>
+                    <div class="form-heading">
+                        <span class="svg-icon locate"></span>
+                        <span>Location Details</span>
+                    </div>
+                    <div class="input-wrap">
+                        <select class="fields" name="" id="country" required>
+                            <option value="" selected disabled></option>
+                            <option value="India">India</option>
+                            <option value="Sri-Lanka">Sri Lanka</option>
+                        </select>
+                        <span class="label select">Country</span>
+                    </div>
+                    <div class="input-wrap">
+                        <select class="fields" name="" id="state" required>
+                            <option value="" selected disabled></option>
+                            <option value="Tamil-Nadu">Tamil Nadu</option>
+                            <option value="Karnataka">Karnataka</option>
+                        </select>
+                        <span class="label select">State</span>
+                    </div>
+                    <div class="input-wrap">
+                        <select class="fields" name="" id="city" required>
+                            <option value="" selected disabled></option>
+                            <option value="Chennai">Chennai</option>
+                            <option value="Ariyalur">Ariyalur</option>
+                        </select>
+                        <span class="label select">City</span>
+                    </div>
+                    <div class="button-wrap">
+                        <button class="previous">Previous</button>
+                        <button class="continue">Continue</button>
+                    </div>
+                </form>
+                <form action="" class="forms slide-left" autocomplete="off" spellcheck="false">
+                    <div class="form-heading">
+                        <span class="svg-icon recover"></span>
+                        <span>Recovery Options</span>
+                    </div>
+                    <div class="input-wrap">
+                        <input type="text" class="fields" name="email" required>
+                        <span class="label">Email Address</span>
+                    </div>
+                    <div class="input-wrap">
+                        <input type="number" class="fields" name="contact" min="0" required>
+                        <span class="label">Contact Number</span>
+                    </div>
+                    <div class="button-wrap">
+                        <button class="previous">Previous</button>
+                        <button class="continue">Continue</button>
+                    </div>
+                </form>
+                <form action="" class="forms slide-left" autocomplete="off" spellcheck="false">
+                    <div class="form-heading">
+                        <span class="svg-icon educate"></span>
+                        <span>Academic Details</span>
+                    </div>
+                    <div class="input-wrap">
+                        <input type="text" class="fields" name="college" required>
+                        <span class="label">Institute Name</span>
+                    </div>
+                    <div class="input-wrap">
+                        <input type="text" class="fields" name="degree" required>
+                        <span class="label">Degree of Education</span>
+                    </div>
+                    <div class="input-wrap">
+                        <input type="text" class="fields" name="field" required>
+                        <span class="label">Department</span>
+                    </div>
+                    <div class="input-wrap">
+                        <input type="text" class="fields" name="field" required>
+                        <span class="label">Year of Passing</span>
+                    </div>
+                    <div class="button-wrap">
+                        <button class="previous">Previous</button>
+                        <button class="continue">Continue</button>
+                    </div>
+                </form>
+                <form action="" class="forms" autocomplete="off" spellcheck="false">
+                    <div class="form-heading">
+                        <span class="svg-icon job"></span>
+                        <span>Job Details</span>
+                    </div>
+                    <div class="input-wrap">
+                        <input type="text" class="fields" name="company" required>
+                        <span class="label">Company Name</span>
+                    </div>
+                    <div class="input-wrap">
+                        <input type="text" class="fields" name="position" required>
+                        <span class="label">Work Position</span>
+                    </div>
+                    <div class="input-wrap">
+                        <input type="text" class="fields" name="time-period" required>
+                        <span class="label">Time Period</span>
+                    </div>
+                    <div class="button-wrap">
+                        <button class="previous">Previous</button>
+                        <button class="continue">Continue</button>
+                    </div>
                 </form>
             </div>
         </div>
