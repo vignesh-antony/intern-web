@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="main-login hide">
+        <div class="main-login" id="login-form">
             <div class="left-bar">
                 <img src="CSS/Images/Yaarme-logo.png" class="main-img">
                 <div class="title">
@@ -17,7 +17,7 @@
                 <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sapiente facere fuga neque dolores ipsam id quaerat, accusantium, ullam temporibus excepturi libero? Voluptatem impedit quibusdam consequatur magnam ipsam illum aliquid.</p>
                 <div class="signup-action">
                     <span>Not a member yet?</span>
-                    <span class="signup">Signup</span>
+                    <span class="signup" id="signup-forward">Signup</span>
                 </div>
             </div>
             <div class="right-bar">
@@ -46,86 +46,82 @@
                 </form>
             </div>
         </div>
-        <div class="main-signup">
+        <div class="main-signup hide" id="signup-form">
             <div class="header">
                 <img src="CSS/Images/Yaarme-logo.png" class="main-img head-img">
                 <div class="title">
                     <b style="color: #196fb6;">Yaar</b><b>Me</b>
                 </div>
-                <span class="login">Login</span>
+                <span class="login" id="login-back">Login</span>
             </div>
             <h2 class="heading" style="font-size: 1.25em;">Sign Up</h2>
             <div class="progress-bar">
-                <span class="number finished">1</span>
-                <span class="line finish-line"></span>
-                <span class="number">2</span>
-                <span class="line"></span>
-                <span class="number">3</span>
-                <span class="line"></span>
-                <span class="number">4</span>
-                <span class="line"></span>
-                <span class="number">5</span>
+                <span class="number finished" id="n-1">1</span>
+                <span class="line" id="l-1"></span>
+                <span class="number" id="n-2">2</span>
+                <span class="line" id="l-2"></span>
+                <span class="number" id="n-3">3</span>
+                <span class="line" id="l-3"></span>
+                <span class="number" id="n-4">4</span>
+                <span class="line" id="l-4"></span>
+                <span class="number" id="n-5">5</span>
             </div>
             <div class="multi-stage">
-                <form action="" class="forms slide-left" autocomplete="off" spellcheck="false">
+                <form action="" class="forms" autocomplete="off" spellcheck="false">
                     <div class="form-heading">
                         <span class="svg-icon account"></span>
                         <span>Account Details</span>
                     </div>
                     <div class="input-wrap">
-                        <input type="text" class="fields" name="uname" required>
+                        <input type="text" class="fields" id="uname" name="uname" required>
                         <span class="label">User Name</span>
                     </div>
                     <div class="input-wrap">
-                        <input type="password" class="fields password" name="upass" required>
+                        <input type="password" class="fields password" id="pass" name="upass" required>
                         <span class="label">Password</span>
                     </div>
-                    <div class="input-wrap">
-                        <input type="password" class="fields password" name="repass" required>
+                    <div class="input-wrap block-tab">
+                        <input type="password" class="fields password" id="re-pass" name="repass" required>
                         <span class="label">Retype Password</span>
                     </div>
-                    <button class="continue">Continue</button>
+                    <div class="button-wrap">
+                        <div data-id="1" class="continue">Continue</div>
+                    </div>
                 </form>
-                <form action="" class="forms slide-left" autocomplete="off" spellcheck="false">
+
+                <form action="" class="forms" autocomplete="off" spellcheck="false">
                     <div class="form-heading">
                         <span class="svg-icon pers"></span>
                         <span>Personal Details</span>
                     </div>
                     <div class="input-wrap">
-                        <input type="text" class="fields" name="first" required>
+                        <input type="text" class="fields" name="first" id="fname" required>
                         <span class="label">First Name</span>
                     </div>
                     <div class="input-wrap">
-                        <input type="text" class="fields" name="last" required>
+                        <input type="text" class="fields" name="last" id="lname" required>
                         <span class="label">Last Name</span>
                     </div>
                     <span class="note">Date of Birth</span>
                     <div class="date-wrap">
                         <div class="input-wrap">
-                            <select class="fields" name="" id="date" required>
+                            <select class="fields" name="date" id="date" required>
                                 <option value="" selected disabled></option>
-                                <option value="1">1</option>
                             </select>
                             <span class="label select">Date</span>
                         </div>
                         <div class="input-wrap month">
-                            <select class="fields" name="" id="month" required>
+                            <select class="fields" name="month" id="month" required>
                                 <option value="" selected disabled></option>
-                                <option value="1">1</option>
                             </select>
                             <span class="label select">Month</span>
                         </div>
                         <div class="input-wrap">
-                            <select class="fields" name="" id="year" required>
+                            <select class="fields" name="year" id="year" required>
                                 <option value="" selected disabled></option>
-                                <option value="1">1</option>
                             </select>
                             <span class="label select">Year</span>
                         </div>
-                    </div>
-                    <div class="form-heading">
-                        <span class="svg-icon locate"></span>
-                        <span>Location Details</span>
                     </div>
                     <div class="input-wrap">
                         <select class="fields" name="" id="country" required>
@@ -144,7 +140,7 @@
                         <span class="label select">State</span>
                     </div>
                     <div class="input-wrap">
-                        <select class="fields" name="" id="city" required>
+                        <select class="fields block-tab" name="" id="city" required>
                             <option value="" selected disabled></option>
                             <option value="Chennai">Chennai</option>
                             <option value="Ariyalur">Ariyalur</option>
@@ -152,11 +148,13 @@
                         <span class="label select">City</span>
                     </div>
                     <div class="button-wrap">
-                        <button class="previous">Previous</button>
-                        <button class="continue">Continue</button>
+                        <div data-id="1" class="previous">Previous</div>
+                        <div data-id="2" class="continue">Continue</div>
                     </div>
+                    <br>
                 </form>
-                <form action="" class="forms slide-left" autocomplete="off" spellcheck="false">
+
+                <form action="" class="forms" autocomplete="off" spellcheck="false">
                     <div class="form-heading">
                         <span class="svg-icon recover"></span>
                         <span>Recovery Options</span>
@@ -165,16 +163,17 @@
                         <input type="text" class="fields" name="email" required>
                         <span class="label">Email Address</span>
                     </div>
-                    <div class="input-wrap">
+                    <div class="input-wrap block-tab">
                         <input type="number" class="fields" name="contact" min="0" required>
                         <span class="label">Contact Number</span>
                     </div>
                     <div class="button-wrap">
-                        <button class="previous">Previous</button>
-                        <button class="continue">Continue</button>
+                        <div data-id="2" class="previous">Previous</div>
+                        <div data-id="3" class="continue">Continue</div>
                     </div>
                 </form>
-                <form action="" class="forms slide-left" autocomplete="off" spellcheck="false">
+
+                <form action="" class="forms" autocomplete="off" spellcheck="false">
                     <div class="form-heading">
                         <span class="svg-icon educate"></span>
                         <span>Academic Details</span>
@@ -191,15 +190,17 @@
                         <input type="text" class="fields" name="field" required>
                         <span class="label">Department</span>
                     </div>
-                    <div class="input-wrap">
+                    <div class="input-wrap block-tab">
                         <input type="text" class="fields" name="field" required>
                         <span class="label">Year of Passing</span>
                     </div>
+                    <span class="note">Please mention the ongoing/recent academic details</span>
                     <div class="button-wrap">
-                        <button class="previous">Previous</button>
-                        <button class="continue">Continue</button>
+                        <div data-id="3" class="previous">Previous</div>
+                        <div data-id="4" class="continue">Continue</div>
                     </div>
                 </form>
+
                 <form action="" class="forms" autocomplete="off" spellcheck="false">
                     <div class="form-heading">
                         <span class="svg-icon job"></span>
@@ -217,13 +218,25 @@
                         <input type="text" class="fields" name="time-period" required>
                         <span class="label">Time Period</span>
                     </div>
-                    <div class="button-wrap">
-                        <button class="previous">Previous</button>
-                        <button class="continue">Continue</button>
+                    <span class="note">Please mention the ongoing job details</span><br>
+                    <div class="form-heading">
+                        <span class="svg-icon skill"></span>
+                        <span>Skills and Interests</span>
                     </div>
+                    <div class="input-wrap block-tab">
+                        <input type="text" class="fields" name="skills" required>
+                        <span class="label">Skills and Interests</span>
+                    </div>
+                    <span class="note">Please mention all the skills in the textarea above.</span>
+                    <div class="button-wrap">
+                        <div data-id="4" class="previous">Previous</div>
+                        <div class="signup-button">Signup</div>
+                    </div>
+                    <br>
                 </form>
             </div>
         </div>
     </div>
+    <script src="JS/main.js"></script>
 </body>
 </html>

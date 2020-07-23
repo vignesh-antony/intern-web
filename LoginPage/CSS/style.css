@@ -109,6 +109,9 @@
 .password{
     letter-spacing: 3px;
 }
+.fields:valid{
+    border-color: rgb(180, 180, 180);
+}
 .fields:focus{
     border-color: #196fb6;
 }
@@ -117,6 +120,7 @@
     top: 0.6em;
     padding: 0 0.15em;
     font-size: 0.85em;
+    font-weight: 500;
     color: #196fb6;
     letter-spacing: 1px;
     background-color: white;
@@ -345,7 +349,8 @@
     display: flex;
 }
 .previous,
-.continue{
+.continue,
+.signup-button{
     border: none;
     border-radius: 3px;
     padding: 0.5em 1em;
@@ -363,7 +368,8 @@
     cursor: pointer;
 }
 .previous::before,
-.continue::after{
+.continue::after,
+.signup-button::after{
     content: '';
     width: 0.35em;
     height: 0.35em;
@@ -373,6 +379,7 @@
     transform: rotate(135deg);
     margin-left: 0.5em;
 }
+.signup-button:hover,
 .continue:hover{
     background-color: #0f3e68;
 }
@@ -398,14 +405,20 @@
 .recover{
     background-image: url("Images/mail.svg");
 }
-.locate{
-    background-image: url("Images/pin.svg");
-}
 .educate{
     background-image: url("Images/school.svg");
 }
 .job{
     background-image: url("Images/work.svg");
+}
+.skill{
+    background-image: url("Images/skill.svg");
+}
+.note{
+    margin-bottom: 0.2em;
+    font-size: 0.85em;
+    color: gray;
+    display: block;
 }
 .hide{
     display: none;
