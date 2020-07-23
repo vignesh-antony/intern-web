@@ -5,6 +5,7 @@ var lform  = document.getElementById("login-form");
 var sform  = document.getElementById("signup-form");
 var login  = document.getElementById("login-back");
 var signup = document.getElementById("signup-forward");
+var smob   = document.getElementById("signup-forward-mobile");
 
 // Form Required Elements
 var uname  = document.getElementById("uname");
@@ -77,6 +78,8 @@ for(elem of cont){
             progressBar(data,"c");
             this.parentElement.parentElement.classList.add("slide-left");
         }
+
+        window.scrollTo(0,0);
     }
 }
 
@@ -87,6 +90,7 @@ for(elem of prev){
         progressBar(data,"p");
 
         this.parentElement.parentElement.previousElementSibling.classList.remove("slide-left");
+        window.scrollTo(0,0);
     }
 }
 
@@ -98,6 +102,12 @@ login.onclick = function(){
 
 // Toggling Signup Form
 signup.onclick = function(){
+    lform.classList.add("hide");
+    sform.classList.remove("hide");
+}
+smob.onclick = function(){
+    window.scrollTo(0,0);
+
     lform.classList.add("hide");
     sform.classList.remove("hide");
 }
