@@ -1,0 +1,144 @@
+@font-face{
+    src: url("../Fonts/SourceSansPro-Regular.ttf");
+    font-family: myFont;
+}
+@font-face{
+    src: url("../Fonts/SourceSansPro-SemiBold.ttf");
+    font-family: myFont;
+    font-weight: bold;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: myFont,'Segoe UI',sans-serif;
+}
+.container{
+    background-color: whitesmoke;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.main-bar{
+    color: white;
+    background-color: black;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+}
+.status{
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.progress-bar{
+    padding: 0.5em;
+    padding-bottom: 0;
+    margin-top: 1em;
+    display: flex;
+}
+.line{
+    flex: 1;
+    height: 3px;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 10px;
+    margin: 0 0.15em;
+}
+.header{
+    padding: 1em;
+    padding-top: 0.75em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: auto;
+    z-index: 1;
+}
+.svg-icon{
+    width: 1em;
+    height: 1em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1em;
+    cursor: pointer;
+    display: block;
+}
+.back-arrow{
+    background-image: url("Images/back.svg");
+}
+.user-image{
+    width: 3em;
+    height: 3em;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-left: 1em;
+}
+.user-details{
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    flex: 1;
+    margin-left: 1em;
+}
+.user-name{
+    font-weight: bold;   
+}
+.send-time{
+    margin-top: 0.25em;
+    font-size: 0.75em;
+}
+.more-icon{
+    background-image: url("Images/more.svg");
+}
+.status-img-container{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.status-image{
+    width: 100%;
+    height: auto;
+    background-size: contain;
+}
+.footer{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+.captions{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.75em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+.up-arrow{
+    width: 0.6em;
+    height: 0.6em;
+    border: 2px solid transparent;
+    border-top-color: white;
+    border-left-color: white;
+    transform: rotate(45deg);
+}
+.reply{
+    font-size: 0.9em;
+    margin-top: 0.15em;
+    margin-bottom: 0.75em;
+}
+@media only screen and (max-width:768px){
+    .main-bar{
+        width: 100%;
+    }
+}
