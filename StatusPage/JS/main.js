@@ -39,6 +39,9 @@ var restart = function(type){
     if(type === -1){
         status[cur_stat + 1].children[0].children[0].classList.remove("active-line");
     }
+    else{
+        status[cur_stat - 1].children[0].children[0].classList.remove("active-line");
+    }
 }
 
 var loadStatus = function(step){
