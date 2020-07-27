@@ -27,8 +27,14 @@
     background-color: black;
     width: 50%;
     height: 100%;
-    display: flex;
+    display: none;
     overflow: hidden;
+}
+.oops{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.15em;
 }
 .status{
     flex-shrink: 0;
@@ -147,6 +153,29 @@
     height: auto;
     background-size: contain;
 }
+.text{
+    background-color: #0f3e67;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5em;
+}
+.text p{
+    padding: 1em;
+    text-align: center;
+}
+.text a{
+    color: white;
+    background-color: rgba(255,255,255,0.35);
+    border-radius: 1em;
+    padding: 0 1em;
+    display: block;
+    margin: 0.75em auto;
+    font-size: 0.9em;
+    width: max-content;
+}
 .active{
     display: flex;
 }
@@ -184,5 +213,9 @@
 @media only screen and (max-width:768px){
     .main-bar{
         width: 100%;
+        display: flex;
+    }
+    .oops{
+        display: none;
     }
 }

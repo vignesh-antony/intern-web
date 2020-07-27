@@ -99,8 +99,8 @@ var counter = function(){
 }
 
 for (elem of container){
-    elem.addEventListener("touchstart",function(event){
-        var x = event.touches[0].clientX;
+    elem.addEventListener("touchend",function(event){
+        var x = event.changedTouches[0].clientX;
         var width = window.innerWidth;
 
         if(x >= (width/2)) showImage(this,1);
