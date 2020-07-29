@@ -24,7 +24,7 @@
 
 
 *{
-   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-family: myFont;
     outline: none;
     box-sizing: border-box;
     text-decoration: none;
@@ -756,7 +756,7 @@ background-color:gainsboro ;
     align-items: center;
     text-align: center;
     font-size: 0.85em;
-    font-weight: 500;
+    font-weight: bold;
     width: 1.25em;
     height: 1.25em;
     position: absolute;
@@ -787,7 +787,7 @@ background-color:gainsboro ;
 .story-user{
     width: 4em;
     font-size: 0.8em;
-    font-weight: 500;
+    font-weight: bold;
     display: block;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -805,7 +805,7 @@ background-color:gainsboro ;
 /* Insta Suggestion Starts */
 .suggest-title{
     font-size: 1em;
-    font-weight: 500;
+    font-weight: bold;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -855,7 +855,7 @@ background-color:gainsboro ;
 .suggest-name{
     width: 8em;
     font-size: 1em;
-    font-weight: 500;
+    font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -881,14 +881,14 @@ background-color:gainsboro ;
 }
 .suggest-button{
     width: 100%;
-    padding: 0.35em 1em !important;
+    padding: 0.35em 1em;
     text-align: center;
     border: none;
     background-color: rgb(1,149,247);
     border-radius: 4px;
     font-size: 0.95em;
     color: white;
-    font-weight: 500;
+    font-weight: bold;
     margin-top: 0.75em;
     cursor: pointer;
 }
@@ -1008,6 +1008,16 @@ background-color:gainsboro ;
       
     .sidebar {
         display: block;
+    }
+
+    .story{
+        margin: 0 0.75em;
+    }
+    .suggest-button{
+        padding: 0.5em 1em;
+    }
+    .close-suggest{
+        font-size: 0.95em;
     }
 
 }
