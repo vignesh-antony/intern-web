@@ -715,10 +715,12 @@ background-color:gainsboro ;
     overflow: hidden;
     overflow-x: scroll;
 }
-.story-section::-webkit-scrollbar{
-    height: 0.25em;
+.story-section::-webkit-scrollbar,
+.suggestions-section::-webkit-scrollbar{
+    height: 0.35em;
 }
-.story-section:hover::-webkit-scrollbar-thumb{
+.story-section:hover::-webkit-scrollbar-thumb,
+.suggestions-section:hover::-webkit-scrollbar-thumb{
     background-color: gainsboro;
 }
 .story{
@@ -768,7 +770,7 @@ background-color:gainsboro ;
 .viewed .img-wrap,
 .mine .img-wrap{
     background: none;
-    border: 1px solid gray;
+    border: 1px solid rgb(173, 173, 173);
 }
 .story-img{
     align-self: center;
@@ -776,6 +778,11 @@ background-color:gainsboro ;
     height: 3.5em;
     object-fit: cover;
     border-radius: 50%;
+    border: 2px solid white;
+}
+.mine .story-img,
+.viewed .story-img{
+    border: none;
 }
 .story-user{
     width: 4em;
@@ -795,6 +802,100 @@ background-color:gainsboro ;
 }
 /* Insta Story Updation Ends */
 
+/* Insta Suggestion Starts */
+.suggest-title{
+    font-size: 1em;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.25em 0.75em 1em 0.75em;
+}
+.see-all{
+    color: #0072B1;
+    font-size: 0.95em;
+    display: block;
+    cursor: pointer;
+}
+.suggestions-section{
+    display: flex;
+    overflow: hidden;
+    overflow-x: scroll;
+    width: 100%;
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
+}
+.suggestion{
+    width: 11em;
+    padding: 0.75em 0.85em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: white;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    margin: 0 0.3em;
+}
+.close-suggest{
+    position: absolute;
+    top: 0.5em;
+    right: 0.75em;
+    color: gray;
+    font-size: 0.85em;
+    opacity: 0.75;
+}
+.suggest-img{
+    width: 5.5em;
+    height: 5.5em;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.suggest-name{
+    width: 8em;
+    font-size: 1em;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: center;
+}
+.verify{
+    width: 1.25em;
+    height: 1.25em;
+    background-size: 1.2em;
+    margin-left: 0.25em;
+    background-image: url("../SVG/correct.svg");
+}
+.suggest-info{
+    font-size: 0.75em;
+    color: gray;
+    text-align: center;
+    margin-top: 0.25em;
+    margin-bottom: auto;
+}
+.suggest-button{
+    width: 100%;
+    padding: 0.35em 1em !important;
+    text-align: center;
+    border: none;
+    background-color: rgb(1,149,247);
+    border-radius: 4px;
+    font-size: 0.95em;
+    color: white;
+    font-weight: 500;
+    margin-top: 0.75em;
+    cursor: pointer;
+}
+.suggest-button:hover{
+    background-color: #2784db;
+}
+/* Insta Suggestion Ends */
 @media only screen and (max-width:1300px){
     .main-navbar{
         width: 85%;
@@ -916,8 +1017,7 @@ background-color:gainsboro ;
     }
     .card {
     margin-bottom: 0.6em;
-   box-shadow: -1px 20px 0px 0px #dddddd61;
-}
+    }
 }
 @media only screen and (max-width:360px){
     .icon-wrap span{
