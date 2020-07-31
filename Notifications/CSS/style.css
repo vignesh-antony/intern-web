@@ -124,10 +124,16 @@
     }
 }
 @media only screen and (max-width:500px){
-    .container{
-        font-size: 0.95em;
-    }
     .search-job{
         padding: 0.25em;
+    }
+    .notify-heading{
+        padding: 0.75em 1em;
+        color: black;
+        font-weight: 500;
+        font-size: 0.95em;
+    }
+    .button{
+        font-size: 1.05em;
     }
 }
