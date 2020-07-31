@@ -1,11 +1,16 @@
 @font-face{
-    src: url("../Lato/Lato-Regular.ttf");
+    src: url("../Fonts/SourceSansPro-Regular.ttf");
     font-family: myFont;
 }
 @font-face{
-    src: url("../Lato/Lato-Bold.ttf");
+    src: url("../Fonts/SourceSansPro-Bold.ttf");
     font-family: myFont;
     font-weight: bold;
+}
+@font-face{
+    src: url("../Fonts/SourceSansPro-SemiBold.ttf");
+    font-family: myFont;
+    font-weight: 500;
 }
 
 .main-navbar-wrap,
@@ -24,7 +29,7 @@
 
 
 *{
-   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-family: myFont;
     outline: none;
     box-sizing: border-box;
     text-decoration: none;
