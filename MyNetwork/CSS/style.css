@@ -7,21 +7,10 @@
     font-family: myFont;
     font-weight: bold;
 }
-
-.main-navbar-wrap,
-.container-wrap,
-.mobile-header,
-.mobile-nav-bar,
-.main-navbar-wrap *,
-.container-wrap *,
-.mobile-header *,
-.mobile-nav-bar *{
-
+*, ::before, ::after{
     padding: 0;
     margin: 0;
-
 }
-
 
 *{
    font-family: myFont;
@@ -628,18 +617,13 @@ margin: auto;
 }
 
 .profile-img-sidebar .down{
-    /* margin: 15px !important; */
-    /* margin-top: 25px !important; */
     color: white;
     filter: invert(1);
     cursor: pointer;
-    /* height: fit-content; */
-    /* height: -moz-fit-content; */
     transition: all 0.3s;
 }
 
 .rotate-arrow{
-    /* display: inline-block; */
     -moz-transform: rotate(180deg);
     transform: rotate(180deg);
 }
@@ -666,12 +650,7 @@ transform: scale(1.1);
 }
 
 .add-account{
-    /* position: relative;
-    z-index: -50;
-    transform: translateY(-150px); */
-    /* display: flex; */
     transition: all 0.1s;
-    /* display: none; */
     width: 100%;
 }
 
@@ -690,15 +669,254 @@ background-color:gainsboro ;
 }
 /* My Network Section Starts */
 
-
+.filter-section{
+    margin-top: 3em;
+    width: 100%;
+    padding: 0.75em;
+    background-color: white;
+    padding-bottom: 0.25em;
+    padding-top: 1em;
+    box-shadow: 0 -6px 6px 6px gray;
+}
+.filter-section ul{
+    list-style-type: none;
+    width: 45%;
+    display: flex;
+    margin: auto;
+    overflow: hidden;
+    padding-bottom: 0.5em;
+    overflow-x: auto;
+}
+.filter-section ul::-webkit-scrollbar{
+    height: 0.2em;
+}
+.filter-section ul:hover::-webkit-scrollbar-thumb{
+    background-color: #eeeeee;
+}
+.filter-section ul li{
+    padding: 0.5em 0.75em;
+    margin-left: 0.75em;
+    box-shadow: inset 0 0 0 1px gray;
+    white-space: nowrap;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.drop-down-arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.drop-down-arrow::after{
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 0.4em solid transparent;
+    border-right: 0.4em solid transparent;
+    border-top: 0.4em solid black;
+    margin-left: 0.35em;
+    margin-top: 0.25em;
+    display: block;
+}
+.filter-section ul li:hover{
+    background-color: #eeeeee;
+    box-shadow: inset 0 0 0 2px gray;
+}
+.filter-section ul .more-filters{
+    color: #0073b1;
+    box-shadow: unset;
+    font-weight: bold;
+}
+.filter-section ul .more-filters:hover{
+    background-color: #f1faff;
+    box-shadow: unset;
+}
+.search-result{
+    width: 45%;
+    padding: 1em;
+    padding-right: 0;
+    background-color: white;
+    margin: 1em auto;
+}
+.result{
+    color: gray;
+    font-size: 0.8em;
+    margin-bottom: 0.25em;
+    display: block;
+}
+.connections-section{
+    display: flex;
+    flex-direction: column;
+}
+.connections{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em;
+    padding-right: 0;
+}
+.user-face{
+    width: 3.5em;
+    height: 3.5em;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.connect{
+    flex: 1;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1.5em;
+    padding-bottom: 1em;
+    padding-right: 1em;
+    border-bottom: 1px solid gainsboro;
+}
+.connect-info{
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    width: 75%;
+}
+.connect-name{
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-end;
+}
+.connect-name .icon{
+    width: 1em;
+    height: 1em;
+    background-size: 0.6em;
+    background-image: url("../SVG/linkedin.svg");
+    margin: 0 0.25em;
+    background-color: rgb(160, 160, 0);
+    color: white;
+    border-radius: 3px;
+}
+.year{
+    font-weight: normal;
+    font-size: 0.8em;
+    margin-left: 0.15em;
+    letter-spacing: 0.5px;
+    color: gray;
+}
+.connect-work{
+    margin-top: 0.15em;
+    font-size: 0.8em;
+}
+.connect-locate{
+    font-size: 0.75em;
+    color: gray;
+    display: flex;
+    align-items: center;
+    margin-top: 0.2em;
+}
+.connect-locate::before{
+    content: '';
+    width: 1em;
+    height: 1em;
+    display: block;
+    background-image: url("../SVG/pin.svg");
+    background-size: 0.9em;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 0.25em;
+    opacity: 0.85;
+    display: block;
+}
+.connect-button{
+    align-self: center;
+    color: #0073b1;
+    box-shadow: inset 0 0 0 1px #0073b1;
+    padding: 0.35em 0.65em;
+    font-weight: bold;
+    border-radius: 2px;
+    font-size: 1.025em;
+    cursor: pointer;
+}
+.connect-button:hover{
+    background-color: #f1faff;
+    box-shadow: inset 0 0 0 2px #0073b1;
+}
+.connect-icon{
+    width: 1.5em;
+    height: 1.5em;
+    background-size: 1.45em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../SVG/add-user.svg");
+    display: none;
+}
+.shared-contacts{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 0.75em;
+}
+.shared{
+    font-size: 0.75em;
+    color: gray;
+}
+.image-wrap{
+    position: relative;
+    height: 1.5em;
+    width: 4em;
+}
+.user-pic-overlap{
+    width: 1.5em;
+    height: 1.5em;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    border: 2px solid white;
+}
+.user-pic-overlap:nth-child(1){
+    left: 0;
+}
+.user-pic-overlap:nth-child(2){
+    left: 0.85em;
+}
+.user-pic-overlap:nth-child(3){
+    left: 1.7em;
+}
 
 /* My Network Section Ends */
+@media only screen and (max-width:1600px){
+    .filter-section ul{
+        width: 50%;
+    }
+    .search-result{
+        width: 50%;
+    }
+}
+@media only screen and (max-width:1500px){
+    .filter-section ul{
+        width: 55%;
+    }
+    .search-result{
+        width: 55%;
+    }
+}
+@media only screen and (max-width:1400px){
+    .filter-section ul{
+        width: 60%;
+    }
+    .search-result{
+        width: 60%;
+    }
+}
 @media only screen and (max-width:1300px){
     .main-navbar{
         width: 85%;
     }
     .container{
         width: 90%;
+    }
+    .filter-section ul{
+        width: 65%;
+    }
+    .search-result{
+        width: 65%;
     }
 }
 @media only screen and (max-width:1150px){
@@ -707,6 +925,12 @@ background-color:gainsboro ;
     }
     .container{
         width: 95%;
+    }
+    .filter-section ul{
+        width: 70%;
+    }
+    .search-result{
+        width: 70%;
     }
 }
 @media only screen and (max-width:1000px){
@@ -723,6 +947,12 @@ background-color:gainsboro ;
     .main-content{
         width: 67%;
     }
+    .filter-section ul{
+        width: 75%;
+    }
+    .search-result{
+        width: 75%;
+    }
 }
 @media only screen and (max-width:900px){
     .right-bar{
@@ -738,10 +968,30 @@ background-color:gainsboro ;
     .main-content{
         width: 75%;
     }
+    .filter-section ul{
+        width: 80%;
+    }
+    .search-result{
+        width: 80%;
+    }
+}
+@media only screen and (max-width:800px){
+    .filter-section ul{
+        width: 85%;
+    }
+    .search-result{
+        width: 85%;
+    }
 }
 @media only screen and (max-width:750px){
     .main-content{
         width: 85%;
+    }
+    .filter-section ul{
+        width: 90%;
+    }
+    .search-result{
+        width: 90%;
     }
 }
 @media only screen and (max-width:650px){
@@ -816,6 +1066,33 @@ background-color:gainsboro ;
     .close-suggest{
         font-size: 0.95em;
     }
+    .filter-section{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .filter-section ul{
+        width: 100%;
+        font-size: 0.9em;
+    }
+    .search-result{
+        width: 100%;
+        margin-top: 0.15em;
+        padding-left: 0.75em;
+    }
+    .connect{
+        margin-left: 1em;
+    }
+    .user-face{
+        width: 3.25em;
+        height: 3.25em;
+    }
+    .connect-button{
+        display: none;
+    }
+    .connect-icon{
+        display: block;
+        cursor: pointer;
+    }
 
 }
 @media only screen and (max-width:500px){
@@ -824,6 +1101,10 @@ background-color:gainsboro ;
     }
     .card {
     margin-bottom: 0.6em;
+    }
+    .user-face{
+        width: 3em;
+        height: 3em;
     }
 }
 @media only screen and (max-width:360px){
