@@ -1,0 +1,34 @@
+@font-face{
+    src: url("../Font/Lato/Lato-Regular.ttf");
+    font-family: myfont;
+}
+@font-face{
+    src: url("../Font/Lato/Lato-Bold.ttf");
+    font-family: myfont;
+    font-weight: bold;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: myfont;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+}
+.main{
+    width: 40%;
+    margin: auto;
+    position: relative;
+}
+.header{
+    background-color: #0073b1;
+    width: 100%;
+    padding: 0.25em;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
