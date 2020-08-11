@@ -27,8 +27,33 @@
 .header{
     background-color: #0073b1;
     width: 100%;
-    padding: 0.25em;
+    padding: 0.5em 0.75em;
     position: sticky;
     top: 0;
     left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon{
+    width: 2em;
+    height: 2em;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 2em;
+    display: block;
+}
+.arrow{
+    background-size: 1.5em;
+    background-image: url("SVG/back.svg");
+}
+.more{
+    background-size: 1.35em;
+    background-image: url("SVG/more-icon.svg");
+    transform: rotate(90deg);
+    filter: invert(1);
+}
+.post-section{
+    display: flex;
+    flex-direction: column;
 }

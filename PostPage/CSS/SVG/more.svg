@@ -1,4 +1,0 @@
-<svg viewBox="0 0 24 24" width="24px" height="24px" x="0" y="0" preserveAspectRatio="xMinYMin meet" class="artdeco-icon icon">
-    <path d="M9,2V4H7V2H9ZM7,9H9V7H7V9Zm0,5H9V12H7v2Z" class="small-icon" style="fill-opacity: 1" id="ellipsis-vertical-icon-small"></path>
-    <path d="M14,2V6H10V2h4ZM10,14h4V10H10v4Zm0,8h4V18H10v4Z" class="large-icon" style="fill: currentColor" id="ellipsis-vertical-icon-large"></path>
-</svg>
