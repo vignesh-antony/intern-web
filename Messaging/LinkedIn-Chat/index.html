@@ -1,140 +1,163 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chats | LinkedIn</title>
-    <link rel="icon" type="image/x-icon" href="CSS/Images/main-icon.png">
-    <link rel="stylesheet" href="CSS/style.css">
-</head>
-<body>
+    <link rel="icon" type="image/x-icon" href="CSS/Images/main-icon.png" />
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
     <div class="container" id="cont">
-        <div class="main">
-            <div class="title-bar">
-                <span class="svg-icon back-arrow"></span>
-                <span class="title-name">Messaging</span>
-                <span class="svg-icon edit"></span>
-                <span class="svg-icon more"></span>
-            </div>
-            
-            <div class="search-bar">
-                <span class="svg-icon search"></span>
-                <input type="text" class="search-text" placeholder="Search messages">
-                <span class="svg-icon filter" id="filter-icon"></span>
-            </div>
-
-            <div class="filter-bar hide" id="filter">
-                <ul class="filter-list">
-                    <li class="opt active">All</li>
-                    <li class="opt">Unread</li>
-                    <li class="opt">My Connections</li>
-                    <li class="opt">InMail</li>
-                    <li class="opt">Archived</li>
-                    <li class="opt">Spam</li>
-                </ul>
-            </div>
-
-            <div class="contacts">
-                <div class="contact">
-                    <div class="img-wrap">
-                        <img src="CSS/Images/sample1.jpg" class="user-image">
-                    </div>
-                    <div class="cont-info">
-                        <span class="user-name">
-                            <span class="name">Vignesh</span>
-                            <span class="time">Fri</span>
-                        </span>
-                        <p class="message">Hello There<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque perspiciatis incidunt, maxime quas, id est quo hic modi tenetur nemo adipisci assumenda nisi. Iste corporis voluptatem sed vel temporibus architecto.</p>
-                    </div>
-                </div>
-                <div class="contact">
-                    <div class="img-wrap online">
-                        <img src="CSS/Images/sample2.jpg" class="user-image">
-                    </div>
-                    <div class="cont-info">
-                        <span class="user-name">
-                            <span class="name">Surya</span>
-                            <span class="time">Fri</span>
-                        </span>
-                        <p class="message">Where's the assignment?</p>
-                    </div>
-                </div>
-                <div class="contact">
-                    <div class="img-wrap">
-                        <img src="CSS/Images/sample3.jpg" class="user-image">
-                    </div>
-                    <div class="cont-info">
-                        <span class="user-name">
-                            <span class="name">Arun Kumar</span>
-                            <span class="time">Thu</span>
-                        </span>
-                        <p class="message">Cool<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque perspiciatis incidunt, maxime quas, id est quo hic modi tenetur nemo adipisci assumenda nisi. Iste corporis voluptatem sed vel temporibus architecto.</p>
-                    </div>
-                </div>
-                <div class="contact">
-                    <div class="img-wrap no-image">
-                        <span>M</span>
-                    </div>
-                    <div class="cont-info">
-                        <span class="user-name">
-                            <span class="name">Manikandan</span>
-                            <span class="time">Thu</span>
-                        </span>
-                        <p class="message">Please provide the project link!</p>
-                    </div>
-                </div>
-                <div class="contact">
-                    <div class="img-wrap">
-                        <img src="CSS/Images/sample4.jpg" class="user-image">
-                    </div>
-                    <div class="cont-info">
-                        <span class="user-name">
-                            <span class="name">Antony</span>
-                            <span class="time">Thu</span>
-                        </span>
-                        <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="contact">
-                    <div class="img-wrap online">
-                        <img src="CSS/Images/sample5.jpg" class="user-image">
-                    </div>
-                    <div class="cont-info">
-                        <span class="user-name">
-                            <span class="name">Arivu</span>
-                            <span class="time">Wed</span>
-                        </span>
-                        <p class="message">Hello There!</p>
-                    </div>
-                </div>
-                <div class="contact">
-                    <div class="img-wrap no-image online">
-                        <span>P</span>
-                    </div>
-                    <div class="cont-info">
-                        <span class="user-name">
-                            <span class="name">Prabhakar</span>
-                            <span class="time">Wed</span>
-                        </span>
-                        <p class="message">Great! <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, molestiae?</p>
-                    </div>
-                </div>
-                <div class="contact">
-                    <div class="img-wrap">
-                        <img src="CSS/Images/user.jpg" class="user-image">
-                    </div>
-                    <div class="cont-info">
-                        <span class="user-name">
-                            <span class="name">Devaraj</span>
-                            <span class="time">Mon</span>
-                        </span>
-                        <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque perspiciatis incidunt, maxime quas, id est quo hic modi tenetur nemo adipisci assumenda nisi. Iste corporis voluptatem sed vel temporibus architecto.</p>
-                    </div>
-                </div>
-                
-            </div>
+      <div class="main">
+        <div class="title-bar">
+          <span class="svg-icon back-arrow"></span>
+          <span class="title-name">Messaging</span>
+          <span class="svg-icon edit"></span>
+          <span class="svg-icon more"></span>
         </div>
+
+        <div class="search-bar">
+          <span class="svg-icon search"></span>
+          <input
+            type="text"
+            class="search-text"
+            placeholder="Search messages"
+          />
+          <span class="svg-icon filter" id="filter-icon"></span>
+        </div>
+
+        <div class="filter-bar hide" id="filter">
+          <ul class="filter-list">
+            <li class="opt active">All</li>
+            <li class="opt">Unread</li>
+            <li class="opt">My Connections</li>
+            <li class="opt">InMail</li>
+            <li class="opt">Archived</li>
+            <li class="opt">Spam</li>
+          </ul>
+        </div>
+
+        <div class="contacts">
+          <div class="contact">
+            <div class="img-wrap">
+              <img src="CSS/Images/sample1.jpg" class="user-image" />
+            </div>
+            <div class="cont-info">
+              <span class="user-name">
+                <span class="name">Vignesh</span>
+                <span class="time">Fri</span>
+              </span>
+              <p class="message">
+                Hello There<br />Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Atque perspiciatis incidunt, maxime quas, id
+                est quo hic modi tenetur nemo adipisci assumenda nisi. Iste
+                corporis voluptatem sed vel temporibus architecto.
+              </p>
+            </div>
+          </div>
+          <div class="contact">
+            <div class="img-wrap online">
+              <img src="CSS/Images/sample2.jpg" class="user-image" />
+            </div>
+            <div class="cont-info">
+              <span class="user-name">
+                <span class="name">Surya</span>
+                <span class="time">Fri</span>
+              </span>
+              <p class="message">Where's the assignment?</p>
+            </div>
+          </div>
+          <div class="contact">
+            <div class="img-wrap">
+              <img src="CSS/Images/sample3.jpg" class="user-image" />
+            </div>
+            <div class="cont-info">
+              <span class="user-name">
+                <span class="name">Arun Kumar</span>
+                <span class="time">Thu</span>
+              </span>
+              <p class="message">
+                Cool<br />Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Atque perspiciatis incidunt, maxime quas, id est quo hic
+                modi tenetur nemo adipisci assumenda nisi. Iste corporis
+                voluptatem sed vel temporibus architecto.
+              </p>
+            </div>
+          </div>
+          <div class="contact">
+            <div class="img-wrap no-image">
+              <span>M</span>
+            </div>
+            <div class="cont-info">
+              <span class="user-name">
+                <span class="name">Manikandan</span>
+                <span class="time">Thu</span>
+              </span>
+              <p class="message">Please provide the project link!</p>
+            </div>
+          </div>
+          <div class="contact">
+            <div class="img-wrap">
+              <img src="CSS/Images/sample4.jpg" class="user-image" />
+            </div>
+            <div class="cont-info">
+              <span class="user-name">
+                <span class="name">Antony</span>
+                <span class="time">Thu</span>
+              </span>
+              <p class="message">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+          <div class="contact">
+            <div class="img-wrap online">
+              <img src="CSS/Images/sample5.jpg" class="user-image" />
+            </div>
+            <div class="cont-info">
+              <span class="user-name">
+                <span class="name">Arivu</span>
+                <span class="time">Wed</span>
+              </span>
+              <p class="message">Hello There!</p>
+            </div>
+          </div>
+          <div class="contact">
+            <div class="img-wrap no-image online">
+              <span>P</span>
+            </div>
+            <div class="cont-info">
+              <span class="user-name">
+                <span class="name">Prabhakar</span>
+                <span class="time">Wed</span>
+              </span>
+              <p class="message">
+                Great! <br />Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Repellat, molestiae?
+              </p>
+            </div>
+          </div>
+          <div class="contact">
+            <div class="img-wrap">
+              <img src="CSS/Images/user.jpg" class="user-image" />
+            </div>
+            <div class="cont-info">
+              <span class="user-name">
+                <span class="name">Devaraj</span>
+                <span class="time">Mon</span>
+              </span>
+              <p class="message">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+                perspiciatis incidunt, maxime quas, id est quo hic modi tenetur
+                nemo adipisci assumenda nisi. Iste corporis voluptatem sed vel
+                temporibus architecto.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <script src="JS/main.js"></script>    
-</body>
+    <script src="JS/main.js"></script>
+  </body>
 </html>

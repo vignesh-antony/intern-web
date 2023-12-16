@@ -3,23 +3,23 @@ var side = document.getElementById("side");
 var sbar = document.getElementById("side-bar");
 var clos = document.getElementById("close");
 
-function closeSidebar(){
-    side.classList.remove("active");
-    sbar.classList.remove("active");
+function closeSidebar() {
+  side.classList.remove("active");
+  sbar.classList.remove("active");
 }
 
-elem.onclick = function(){
-    side.classList.add("active");
-    sbar.classList.add("active");
-}
-clos.onclick = function(){
+elem.onclick = function () {
+  side.classList.add("active");
+  sbar.classList.add("active");
+};
+clos.onclick = function () {
+  closeSidebar();
+};
+side.onclick = function () {
+  if (event.target != sbar) {
     closeSidebar();
-}
-side.onclick = function(){
-    if(event.target != sbar){
-        closeSidebar();
-    }
-}
-sbar.addEventListener("click",function(ev){
-    ev.stopPropagation();
+  }
+};
+sbar.addEventListener("click", function (ev) {
+  ev.stopPropagation();
 });
